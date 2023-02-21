@@ -1,15 +1,172 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
 
-*{
+
+:root {
+    --pure: #ffffff;
+    --black: #000000;
+    --orange: #d09407;
+    --gray: #e3e3e3;
+    --fadeGray: #f5f5f5;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-align: none;
     list-style-type: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
 }
-body{
+
+body {
+    font-family: 'Nunito', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/********************* Naviation Bar ********************/
+.header {
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.header li {
+    display: inline-block;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.header .logo i {
+    margin-right: 4px;
+}
+
+.navigation a {
+    font-size: 18px;
+    color: var(--black);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.navigation li:hover a{
+    background-color: var(--orange);
+    color: var(--pure);
+}
+
+.icons i {
+    display: inline-block;
+    background: #d8d8d8;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    color: var(--orange);
+    /* transform: rotate(360deg); */
+}
+
+#menuBar {
+    display: none;
+}
+
+#searchForm{
+    position: absolute;
+    top: -110%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+#searchForm.active{
+    top: 0%;
+}
+#searchForm input{
+    width: 20%;
+    background-color: transparent;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: var(--pure);
+    text-align: center;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--pure);
+}
+#searchForm label{
+    color: var(--pure);
+    font-size: 20px;
+    padding: 4px;
+    cursor: pointer;
+}
+#closeSearch{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 6px;
+    color: var(--pure);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/********************* Naviation Bar End ********************/
+
+
+
+/********************* Media Query ************************/
+@media screen and (max-width:991px) {
 
 }
-html{
-    scroll-behavior: smooth;
+
+@media screen and (max-width:768px) {
+    #menuBar {
+        display: inline-block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 10px 0px;
+        background: var(--fadeGray);
+        /* text-align: center; */
+        display: none;
+    }
+    .navigation.active{
+        display: block;
+    }
+    .navigation li{
+        display: block;
+    }
+    .navigation a{
+        display: block;
+    }
+
+    #searchForm input{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .header .logo {
+        font-size: 20px;
+    }
 }

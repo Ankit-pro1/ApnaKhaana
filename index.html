@@ -14,21 +14,26 @@
 <body>
     <!--------------------- Navigation Bar ----------->
     <div class="header">
-        <a href="#logo"><i class="fa-sharp fa-solid fa-utensils"></i></a>
+        <a href="#logo" class="logo"><i class="fa-sharp fa-solid fa-utensils"></i>ApnaKhaana..</a>
         <ul class="navigation">
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#order">Order</a></li>
-            <li><a href="about">About</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
         <div class="icons">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            <i class="fa-sharp fa-solid fa-bars" id="menuBar"></i>
+            <i class="fa-sharp fa-solid fa-magnifying-glass" id="searchBtn"></i>
             <i class="fa-sharp fa-solid fa-heart"></i>
             <i class="fa-sharp fa-solid fa-cart-shopping"></i>
         </div>
     </div>
+    <form action="" id="searchForm">
+        <input type="text" placeholder="search here..." name="" id="searchBox">
+        <label for=""><i class="fa-sharp fa-solid fa-magnifying-glass"></i></label>
+        <i class="fa-sharp fa-solid fa-xmark" id="closeSearch"></i>
+    </form>
     <!----------------- Navigation Bar End ----------->
     
     <script src="main.js"></script>
