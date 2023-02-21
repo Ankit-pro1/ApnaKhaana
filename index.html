@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ApnaKhaana-Khaana that makes you happy</title>
+
     <!---------------- Fontawesome ------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!----------------- Swiper CSS -------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
     <!---------------- Custom CSS -------------------->
     <link rel="stylesheet" href="style.css">
@@ -35,7 +39,86 @@
         <i class="fa-sharp fa-solid fa-xmark" id="closeSearch"></i>
     </form>
     <!----------------- Navigation Bar End ----------->
-    
+
+
+    <!----------------- Home Section ----------------->
+    <section id="home" class="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Hot Noodles</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus <br> temporibus sint dicta repudiandae.</p>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/home1.jpg" alt="chowmein">
+                    </div>
+                </div>
+
+                 <!-- Slide 2 -->
+                 <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Spicy Dumpling</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus <br> temporibus sint dicta repudiandae.</p>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/home2.jpg" alt="dumpling">
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Combo Pack</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus <br> temporibus sint dicta repudiandae.</p>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/home3.jpg" alt="combopack">
+                    </div>
+                </div>
+
+                  <!-- Slide 4 -->
+                  <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Juicy Straberries</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus <br> temporibus sint dicta repudiandae.</p>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/home4.png" alt="straberries">
+                    </div>
+                </div>
+
+                  <!-- Slide 5 -->
+                  <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Special Dish</span>
+                        <h3>Popular Meal</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A possimus <br> temporibus sint dicta repudiandae.</p>
+                        <a href="" class="btn">Order now</a>
+                    </div>
+                    <div class="image">
+                        <img src="./image/home5.png" alt="meal">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!----------------- Home Section End ----------------->
+
+    <!------------------- Swiper JS ---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!------------------- Custom JS ---------------------->
     <script src="main.js"></script>
 </body>
 </html>
