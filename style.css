@@ -40,6 +40,18 @@ section{
 .btn:hover{
     background-color: var(--orange);
 }
+.subHeading{
+    color: var(--blue);
+    text-align: center;
+}
+.heading{
+    color: var(--orange);
+    font-size: 44px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -67,7 +79,9 @@ html {
 .header .logo i {
     margin-right: 4px;
 }
-
+.navigation{
+    z-index: 1000;
+}
 .navigation a {
     font-size: 18px;
     color: var(--black);
@@ -149,13 +163,13 @@ html {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* gap: 20px; */
+    gap: 20px;
 }
 .home .home-slider .slide .content{
-    flex: 50%
+    flex: 1;
 }
 .home .home-slider .slide .image{
-    flex: 50%;
+    flex: 1;
     text-align: center;
 }
 .home .home-slider .slide .image img{
@@ -171,7 +185,7 @@ html {
     color: var(--blue);
     font-size: 44px;
     font-weight: 700;
-    margin: 4px 0;
+    margin: 2px 0;
     letter-spacing: 0.4px;
 }
 .home .home-slider .slide .content p{
@@ -184,6 +198,75 @@ html {
 }
 /******************** Home Section End ********************/
 
+/******************** Menu Section Start ******************/
+.card-container{
+    /* background-color: var(--fadeGray); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+.card-container .card{
+    position: relative;
+    background-color: var(--pure);
+    box-shadow: var(--box-shadow);
+    padding: 20px
+}
+.card-container .card .fa-eye,
+.card-container .card .fa-heart{
+    position: absolute;
+    top: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--gray);
+    display: none;
+    z-index: 111;
+}
+.card-container .card .fa-heart{
+    right: 20px;
+}
+.card-container .card .fa-eye{
+    left: 20px;
+}
+.card-container .card:hover .fa-eye,
+.card-container .card:hover .fa-heart{
+    display: inline-block;
+}
+
+.card-container .card .fa-eye:hover,
+.card-container .card .fa-heart:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+.card-container .card .cardImg{
+    text-align: center;
+}
+.card-container .card .cardImg img{
+    width: 250px;
+}
+.card-container .card .cardHeading{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 4px;
+    color:var(--blue)
+}
+.card-container .card .stars{
+    text-align: center;
+    color: var(--orange);
+}
+.card-container .card .cardFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.card-container .card .cardFooter .price{
+    color: var(--orange);
+    font-size: 20px;
+    font-weight: 600;
+}
+/******************** Menu Section End ********************/
 
 
 
@@ -241,7 +324,26 @@ html {
 }
 
 @media screen and (max-width:576px){
+
+    section{
+        padding: 20px 5%;
+    }
+
     .header .logo {
         font-size: 20px;
+    }
+    .home .home-slider .slide .content span{
+        font-size: 20px;
+    }
+    .home .home-slider .slide .content h3{
+        font-size: 32px;
+        font-weight: 700;
+        margin: 4px 0;
+        letter-spacing: 0.4px;
+    }
+    .home .home-slider .slide .content p{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 16px;
     }
 }
