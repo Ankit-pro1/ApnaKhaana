@@ -348,6 +348,43 @@ html {
     color: var(--orange);
 }
 /******************** Review Section Ends ****************/
+
+/******************** Order Form Starts ******************/
+.order .orderForm .form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 20px;
+}
+.order .orderForm .form .leftInput{
+    flex: 1;
+}
+.order .orderForm .form .rightInput{
+    flex: 1;
+}
+.order .orderForm .form .inputBox{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.order .orderForm .form .inputBox span{
+    margin-bottom: 2px;
+}
+.order .orderForm .form .inputBox input,
+.order .orderForm .form .inputBox select,
+.order .orderForm .form .inputBox textarea{
+    outline: none;
+    border: 1px solid var(--blue);
+    height: 32px;
+    padding: 6px 6px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.order .orderForm .form .inputBox textarea{
+    resize: none;
+}
+/******************** Order Form Ends ******************/
  
 
 
@@ -447,5 +484,10 @@ html {
         width: 340px;
         height: 290px;
         object-fit: contain;
+    }
+
+    .order .orderForm .form .inputBox{
+        width: 100%;
+        margin-bottom: 4px;
     }
 }

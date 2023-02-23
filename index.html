@@ -22,9 +22,9 @@
         <ul class="navigation">
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#order">Order</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#review">Review</a></li>
+            <li><a href="#order">Order</a></li>
         </ul>
         <div class="icons">
             <i class="fa-sharp fa-solid fa-bars" id="menuBar"></i>
@@ -371,6 +371,59 @@
         </div>
     </section>
     <!------------------- Review Section Ends --------------->
+
+    <!------------------- Order Section Starts -------------->
+    <section class="order" id="order">
+        <h3 class="subHeading">Order Now</h3>
+        <h1 class="heading">Free and Fast</h1>
+        <div class="orderForm">
+            <form action="">
+                <div class="form">
+                    <div class="leftInput">
+                        <div class="inputBox">
+                            <span>Full Name</span>
+                            <input type="text" name="" id="" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Menu</span>
+                            <select name="" id="">
+                                <option value="" >Select item</option>
+                                <option value="">Burger</option>
+                                <option value="">Momos</option>
+                                <option value="">Chowmein</option>
+                                <option value="">Chilli Potato</option>
+                                <option value="">Spring Roll</option>
+                                <option value="">Pasta</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span>Quantity</span>
+                            <input type="number" name="" id="" min="1" max="5" required>
+                        </div>
+                       
+                    </div>
+                    <div class="rightInput">
+                        <div class="inputBox">
+                            <span>Phone Number</span>
+                            <input type="text" name="" id="" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Full Address</span>
+                            <input type="text" name="" id="" required>
+                        </div>
+                        <div class="inputBox">
+                            <span>Custom Message</span>
+                            <textarea name="" id="" placeholder="optional"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="submitBtn" style="text-align:center">
+                    <button class="btn">Submit</button> 
+                </div>
+            </form>
+        </div>
+    </section>
+    <!------------------- Order Section Ends -------------->
 
     <!------------------- Swiper JS ---------------------->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
