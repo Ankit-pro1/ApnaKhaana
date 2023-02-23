@@ -268,7 +268,7 @@ html {
     font-size: 20px;
     font-weight: 600;
 }
-#menu{
+#menu, #review{
     /* padding: 0 0; */
     background-color: var(--fadeGray)
 }
@@ -316,6 +316,38 @@ html {
     color: var(--orange);
 }
 /******************** About Section End *****************/
+
+/******************** Review Section Start ***************/
+.review .slide{
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    position: relative;
+    margin-top: 10px;
+    background-color: var(--pure);
+}
+.review .slide .fa-quote-right{
+    position: absolute;
+    top: 20px;right: 20px;
+    font-size: 44px;
+    color: var(--gray);
+}
+.review .slide .user{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.review .slide .user img{
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border: 2px solid var(--orange);
+    border-radius: 50%;
+    margin-right: 30px;
+}
+.review .slide .userInfo .stars{
+    color: var(--orange);
+}
+/******************** Review Section Ends ****************/
  
 
 
