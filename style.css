@@ -27,7 +27,7 @@ body {
 
 /************ Utility Classes **************/
 section{
-    padding: 20px 10%;
+    padding: 40px 10%;
 }
 .btn{
     background-color: var(--blue);
@@ -268,7 +268,7 @@ html {
     font-size: 20px;
     font-weight: 600;
 }
-#menu, #review{
+#menu, #review, #footer{
     /* padding: 0 0; */
     background-color: var(--fadeGray)
 }
@@ -385,7 +385,50 @@ html {
     resize: none;
 }
 /******************** Order Form Ends ******************/
- 
+
+/******************** Footer Section Starts **************/
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 236px));
+    justify-content: space-around;
+    gap: 20px;
+}
+.footer .box-container .box h3{
+    font-size: 22px;
+    padding: 4px 0;
+    color: var(--blue);
+}
+.footer .box-container .box a{
+    color: var(--black);
+    font-size: 17px;
+    margin: 2px;
+    /* font-weight: 500; */
+}
+.footer .box-container .box a i{
+    font-size: 18px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-right: 4px;
+    color: var(--blue);
+    font-weight: 600;
+}
+.footer .box-container .box a:hover{
+    color: var(--orange)
+}
+/******************** Footer Section Ends *************/
+
+.credit{
+    text-align: center;
+    background-color: var(--black);
+    color: var(--pure);
+    box-shadow: var(--box-shadow);
+    padding: 8px 0;
+}
+.credit a{
+    color: var(--pure);
+}
 
 
 
